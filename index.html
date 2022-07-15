@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/spacelab/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/style.css">
+<title>Adivina el numero</title>
+</head>
+<body>
+    <header >
+       <div class="text-center title">
+           <h1 class="text-info">Adivina el numero</h1>
+           <hr>
+           <p class="m-4 text-info">En este juego se generara un numero aleatorio entre 0 y 50. Introduce un numero y se te indicara si es mayor o menor que el numero generado. Se mostrara un registro del numero de intentos que llevas.</p>
+       </div>
+    </header>
+    <main>
+        <div class="numberContainer text-center" id="nivel50">
+            <span id="hiddenNumber"> ? </span>
+        </div>
+        <div class="form-group">
+            <div class="text-center">
+                <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Introduce un numero entre 0 y 50</label>
+            </div>
+            <input class="form-control form-control-lg" type="number" name="guessNumber" id="inputLarge" min="0" max="50" step="1"  >
+        </div>
+            <button type="button" class="btn btn-info btn-lg center-block guessBtn" onclick="compare()">Adivina!</button>
+            <button type="button" class="btn btn-info btn-lg center-block reloadBtn" onclick="reload()">Juega de nuevo!</button>
+            <div class="row">
+                <div class="col-6" id="yourNumber"></div>
+                <div class="col-6" id="yourTries"></div>
+        </div>
+    </main>
+    <footer class="footer bg-info">
+        <div class="text-center">
+            <span>Dannie Estrada</span>
+        </div>
+        
+    </footer>
+
+</body>
+    <script src="/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,44 @@
+header p{
+    color: black;
+}
+h1 {
+    padding: 5%;
+}
+title,
+.footer,
+.row {
+    margin: 5%;
+}
+.numberContainer {
+    border: 2px solid red;
+    /* border-radius: 50%; */
+    height: 50vh;
+    height: calc(100% - 50vh);
+    margin: 10%;
+}
+#hiddenNumber {
+    font-size: 15rem;
+}
+.messages div {
+    border-color: red ;
+}
+
+#inputLarge {
+    width: 50%;
+    margin: auto;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reloadBtn {
+    display: none;
+}
+.footer {
+    height: 20vh;
+    color: black;
+}
+.footer span {
+    font-size: small;
+}
